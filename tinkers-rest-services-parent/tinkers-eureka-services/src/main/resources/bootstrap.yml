@@ -2,4 +2,4 @@ server:
   port: 8761
 spring:
   application:
-    name: tinkers-eureka-server
+    name: tinkers-eureka-services

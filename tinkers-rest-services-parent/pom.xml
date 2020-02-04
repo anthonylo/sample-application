@@ -11,7 +11,10 @@
     <artifactId>tinkers-rest-services-parent</artifactId>
     <packaging>pom</packaging>
     <modules>
+        <module>tinkers-proxies</module>
         <module>tinkers-eureka-services</module>
+        <module>tinkers-user-services</module>
+        <module>tinkers-gateway-services</module>
     </modules>
     <properties>
         <!-- Spring Dependencies -->
