@@ -1,19 +1,21 @@
 package com.tinkers.core.beans.users;
 
-import java.io.Serializable;
+import com.tinkers.core.beans.Core;
+
 import java.util.Objects;
 
-public class User implements Serializable {
-  private int id;
+public class User implements Core<Integer> {
+  private Integer id;
   private String firstName;
   private String lastName;
   private long age;
 
-  public int getId() {
+  @Override
+  public Integer getId() {
     return id;
   }
 
-  public void setId(final int id) {
+  public void setId(final Integer id) {
     this.id = id;
   }
 
@@ -39,6 +41,11 @@ public class User implements Serializable {
 
   public void setAge(final long age) {
     this.age = age;
+  }
+
+  @Override
+  public Class<Integer> getIdType() {
+    return Integer.class;
   }
 
   @Override
