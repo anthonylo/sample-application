@@ -7,6 +7,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>tinkers-core</module>
+        <module>tinkers-dao</module>
         <module>tinkers-rest-services-parent</module>
     </modules>
     <properties>

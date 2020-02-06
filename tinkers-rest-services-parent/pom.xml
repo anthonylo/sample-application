@@ -11,18 +11,30 @@
     <artifactId>tinkers-rest-services-parent</artifactId>
     <packaging>pom</packaging>
     <modules>
+        <module>tinkers-rest-framework</module>
         <module>tinkers-proxies</module>
         <module>tinkers-eureka-services</module>
         <module>tinkers-user-services</module>
         <module>tinkers-gateway-services</module>
     </modules>
     <properties>
+        <!-- Tinkers Dependencies -->
+        <tinkers.core.version>1.0-SNAPSHOT</tinkers.core.version>
+
         <!-- Spring Dependencies -->
         <spring-boot.version>2.2.2.RELEASE</spring-boot.version>
         <spring-cloud.version>Hoxton.SR1</spring-cloud.version>
     </properties>
     <dependencyManagement>
         <dependencies>
+            <!-- Tinkers Dependencies -->
+            <dependency>
+                <groupId>com.tinkers</groupId>
+                <artifactId>tickers-core</artifactId>
+                <version>${tinkers.core.version}</version>
+            </dependency>
+
+            <!-- Spring Dependencies -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-parent</artifactId>
